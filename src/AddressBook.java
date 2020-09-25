@@ -13,7 +13,9 @@ public AddressBook(AddressBook address){
     public void addBuddy(BuddyInfo buddy){
         this.addElement(buddy);
     }
-
+public void removeBuddy(BuddyInfo buddy){
+    this.removeElement(buddy);
+}
     public void addBuddy(AddressBook address){
     for(int i=0; i<address.size(); i++) {
         this.addBuddy(address.get(i));
@@ -27,6 +29,9 @@ public AddressBook(AddressBook address){
     }
 
     public static void main(String[] args){
-    System.out.println("Address Book");
+    BuddyInfo buddy = new BuddyInfo("Tom","Carleton", "613");
+    AddressBook addressBook= new AddressBook();
+    addressBook.addBuddy(buddy);
+    addressBook.removeBuddy(buddy);
     }
 }
