@@ -15,6 +15,10 @@ public class AddressBook {
             myBuddies.add(aBuddy);
         }
     }
+
+    public void testMethod(){
+
+    }
     public BuddyInfo removeBuddy(int index){
         if(index>=0 && index < myBuddies.size()) {
             return myBuddies.remove(index);
